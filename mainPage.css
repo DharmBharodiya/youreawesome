@@ -38,6 +38,7 @@ h1{
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
+    text-decoration: underline;
 }
 
 .tapHere:active{
