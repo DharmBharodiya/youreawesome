@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you're best</title>
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="shortcut icon" href="whiteheart.png" type="image/x-icon">
+</head>
+<body>
+    <div class="mainDiv">
+        <h1 class="doinGood">You're doing good</h1>
+        <button class="tapHere" onclick="display()">tap here</button>
+        <p class="author">by <span class="dharm"><a href="https://www.instagram.com/dharm_bharodiya" target="_blank">dharm</a></span></p>
+    </div>
+
+    <script>
+        let affirmations = ["You're Best🤍","Nothing Can Stop You","You're an inspiration🤍","You'll overcome it all","I'm always there for you, no matter what",
+    "God always haves better plans😃","The best is yet to come😃","You're strong","You're confident","You're courageous😄","You are capable of doing anything","You're a happy person"
+,"You're so worthy✨","You're amazing","You can make everyone feel better","God is always there with you🤍","you're beautiful", "everyone loves you😊","i'm really proud of how far you've come. let yourself enjoy this moment, you deserve it",
+"there's always something good coming, remember that", "relax..you're gonna figure it out like you always do😃","listen to some good music🎶","it's totally fine to cry when you feel like"
+,"you did your best 😊","breathe in, breathe out","you got this🙌","believe in yourself🤍","you're a star🌟","you're a gem💎","you're not alone in this, be happy😃","please always be happy😄"];
+
+        let theTexts = document.querySelector(".doinGood");
+        // let randomNum = Math.floor(Math.random() * arr.length);
+
+        // function getRandomItem(arr) {
+        // // get random index value
+        // const randomIndex = Math.floor(Math.random() * arr.length);
+        // // get random item
+        // console.log(randomIndex);
+        // const item = arr[randomIndex];
+        // return item;
+        // }
+
+        function getNumber(arr) {
+        var min = 0,
+        max = arr.length,
+        random;
+
+        do {
+        random = Math.floor(Math.random() * (max - min)) + min;
+        } while (random === getNumber.last);
+        getNumber.last = random;
+        const item = arr[random];
+        return item;
+    };
+
+var i;
+for (i = 0; i < arr.length; i++) {
+    console.log(getNumber());
+}
+
+        function display(){
+            theTexts.innerHTML = getNumber(affirmations);
+        }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you're awesome</title>
+    <link rel="shortcut icon" href="whiteheart.png" type="image/x-icon">
+    <link rel="stylesheet" href="beYourself.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="theHead">Hey, <span id="theSpan"> Dear </span></h1>
+        <p class="theMoto">this page will help you feel more confident 😊</p>
+        <button class="tapHere" onclick="location.href='mainPage.html'">please tap here</button>
+        <p class="author">by <span class="dharm"><a href="https://www.instagram.com/dharm_bharodiya" target="_blank">dharm</a></span></p>
+    </div>
+
+    <script>
+        let theSpan = document.querySelector("#theSpan");
+        let theAns = prompt("Please enter your name.");
+
+        theSpan.innerText = theAns;
+
+
+        let button = document.querySelector(".tapHere");
+    </script>
+</body>
+</html>
